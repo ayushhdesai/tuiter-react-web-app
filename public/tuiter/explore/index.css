@@ -1,0 +1,111 @@
+.wd-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.wd-search {
+  width: 340px;
+  background-color: lightgrey;
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.wd-search-icon {
+  margin-left: 5px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+}
+
+.wd-gear-icon {
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+
+.wd-input {
+  border: none;
+  background: none;
+  color: darkgrey;
+  width: 200px; /* Adjust the width as needed */
+  outline: none;
+}
+
+.wd-gear-container {
+  float: right;
+  margin-top: -35px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.wd-tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.wd-tabs li {
+  font-size: 14px;
+  color: gray;
+  margin-right: 32px;
+}
+
+.wd-tabs li:last-child {
+  margin-right: 0;
+}
+
+.wd-selected .wd-tab-label {
+  border-bottom: 2px solid blue;
+}
+
+.wd-tab-label {
+  padding-bottom: 5px;
+}
+
+.wd-image {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.wd-image-overlay {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  color: white;
+}
+
+.wd-tweets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wd-tweet {
+  margin-bottom: 10px;
+}
+
+.wd-trending {
+  color: grey;
+  font-size: 12px;
+}
+
+.wd-topic {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+
+.wd-tweet-dots {
+  float: right;
+  color: grey;
+  font-size: 12px;
+}
+
+.wd-tweet-count {
+  color: grey;
+  font-size: 12px;
+}

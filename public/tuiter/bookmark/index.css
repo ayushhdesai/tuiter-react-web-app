@@ -1,0 +1,111 @@
+.wd-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.wd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wd-bold {
+  font-weight: bold;
+}
+
+.wd-post {
+  display: flex;
+  align-items: center;
+}
+
+.wd-profile-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.wd-profile {
+  width: 100%;
+  height: auto;
+}
+
+.wd-tweet {
+  flex-grow: 1;
+  padding-right: 12px;
+}
+
+.wd-small {
+  font-size: 12px;
+  color: grey;
+}
+
+.wd-explore {
+  flex-grow: 1;
+  margin-left: 20px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+.wd-image {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+
+.wd-content {
+  margin-top: 12px;
+}
+
+.wd-website,
+.wd-topic,
+.wd-related-info {
+  margin: 0;
+  padding-left: 7.5px;
+}
+
+.wd-website {
+  color: gray;
+  font-size: 12px;
+}
+
+.wd-topic {
+  font-size: 15px;
+}
+
+.wd-description {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.wd-related-info {
+  color: gray;
+  font-size: 12px;
+}
+
+.wd-interactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.wd-interactions i {
+  margin-right: 5px;
+}
+
+.wd-count {
+  font-size: 12px;
+  color: gray;
+}
+
+.wd-interactions .fa-heart {
+  color: #e75480;
+}

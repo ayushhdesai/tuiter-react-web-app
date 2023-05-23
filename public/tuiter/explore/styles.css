@@ -1,0 +1,45 @@
+.wd-image {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.wd-image-overlay {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  color: white;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.wd-search {
+  display: flex;
+  align-items: center;
+  background-color: #c0c0c0;
+  flex-grow: 1;
+}
+
+.wd-search-icon {
+  color: grey;
+}
+
+.wd-input {
+  background-color: grey;
+  border: none;
+  padding: 5px;
+  color: white;
+}
+
+.wd-gear-container {
+  
+  margin-left: 20px;
+}
+
+.wd-gear-icon {
+  margin-top: 25px;
+  color: blue;
+}
