@@ -8,8 +8,8 @@ let true3 = !false2;
 let numberVariable = 123;
 let floatingPointNumber = 234.345;
 let false3 = numberVariable < 100;
-let sortaTrue = '1' == 1;
-let notTrue = '1' == 1;
+let sortaTrue = '1' === 1;
+let notTrue = '1' === 1;
 let true4 = numberVariable === 123; // Define true4
 let true5 = floatingPointNumber !== 321.432; // Define true5
 
