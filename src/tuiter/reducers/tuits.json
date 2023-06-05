@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "React JS",
+    "userName": "Web Dev",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "time": "2h",
+    "image": "react.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@react.js",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  }, 
+  {
+    "_id": 235,
+    "topic": "Javascript",
+    "userName": "Web Future",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "time": "1d",
+    "image": "js.png",
+    "liked": false,
+    "replies": 98,
+    "retuits": 234,
+    "likes": 1876,
+    "handle": "@js",
+    "tuit": "Just announced Neuralink's breakthrough technology that enables people with paralysis to control a computer or mobile device with their mind. This has the potential to significantly improve the quality of life for millions of individuals."
+  },
+  {
+    "_id": 237,
+    "topic": "Entertainment",
+    "userName": "Netflix",
+    "title": "New Original Series 'The Crowned Kingdom' Now Streaming",
+    "time": "4h",
+    "image": "netflix.jpg",
+    "liked": true,
+    "replies": 67,
+    "retuits": 189,
+    "likes": 876,
+    "handle": "@netflix",
+    "tuit": "Step into the world of royal intrigues and power struggles with our new original series, 'The Crowned Kingdom', Binge-watch all episodes now and immerse yourself in a captivating tale of ambition, loyalty, and betrayal. Don't miss out!"
+  }
+]
