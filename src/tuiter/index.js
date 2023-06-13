@@ -9,7 +9,7 @@ import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import ProfileScreen from "./user/profile-screen";
+import ProfileScreen from "./profile-screen/profile-screen";
 import LoginScreen from "./user/login-screen";
 import RegisterScreen from "./user/register";
 import authReducer from "./reducers/auth-reducer";
