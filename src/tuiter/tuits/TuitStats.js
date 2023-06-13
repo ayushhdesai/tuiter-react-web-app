@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { FiMessageSquare, FiRepeat, FiShare, FiHeart } from 'react-icons/fi';
 import { FaHeart } from 'react-icons/fa';
+import { updateTuitThunk } from '../services/tuits-thunks';
 
 const TuitStats = ({ tuit }) => {
+  const dispatch = useDispatch();
   const [isLiked, setLiked] = useState(tuit.liked);
   const [likesCount, setLikesCount] = useState(tuit.likes);
 
   const handleLike = () => {
     setLiked(!isLiked);
 
-    if (isLiked) {
-      setLikesCount(likesCount - 1);
-    } else {
+    if (!isLiked) {
+      dispatch(updateTuitThunk({likes: tuit.likes + 1 }));
       setLikesCount(likesCount + 1);
+    } else {
+      dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }));
+      setLikesCount(likesCount - 1);
     }
   };
 
