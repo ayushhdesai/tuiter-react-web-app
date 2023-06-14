@@ -1,6 +1,5 @@
 import axios from 'axios';
-const SERVER_API_URL = process.env.REACT_APP_SERVER_API_URL;
-const TUITS_API = `${SERVER_API_URL}/tuits`;
+const TUITS_API = `https://tuiter-node-server-app-ypmd.onrender.com/api/tuits`;
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
@@ -20,6 +19,6 @@ export const deleteTuit = async (tid) => {
 
 export const updateTuit = async (tuit) => {
     const response = await axios.put(`${TUITS_API}/${tuit._id}`, tuit);
-    return tuit;
-
+    const tuits = response.data;
+    return tuits;
 }
