@@ -10,7 +10,11 @@ const TuitsList = () => {
   const dispatch = useDispatch();
   useEffect(() =>{
     dispatch(findTuitsThunk())
+<<<<<<< HEAD
   }, [dispatch])
+=======
+  })
+>>>>>>> d383d0934a9b6e8707d177fb23cbfe5ac047245c
  return(
    <ul className="list-group">
     { loading &&

@@ -4,8 +4,12 @@ import { findTuitsThunk, deleteTuitThunk, createTuitThunk } from "../services/tu
 const initialState = {
   tuits: [],
   loading: false
+<<<<<<< HEAD
 }
    
+=======
+}   
+>>>>>>> d383d0934a9b6e8707d177fb23cbfe5ac047245c
 const tuitsSlice = createSlice({
  name: 'tuits',
  initialState,
