@@ -1,5 +1,5 @@
 import axios from "axios";
-const USERS_URL = `https://tuiter-node-server-app-ypmd.onrender.com/api/users`;
+const USERS_URL = `https://tuiter-node-server-final.onrender.com/api/users`;
 
 
 const api = axios.create({ withCredentials: true });
