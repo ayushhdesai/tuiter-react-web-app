@@ -24,6 +24,7 @@ const NavigationSidebar = () => {
         <div className="list-group">
             {links.map((link) => (
                 <Link
+                    key={link.name}
                     to={`/tuiter/${link.name}`}
                     className={`list-group-item text-capitalize ${active === link.name ? "active" : ""}`}
                 >
