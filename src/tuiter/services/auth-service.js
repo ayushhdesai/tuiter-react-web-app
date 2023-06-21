@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const USERS_URL = `http://localhost:4000/api/users`;
+const USERS_URL = `https://tuiter-mongodb-node-server.onrender.com/api/users`;
 const api = axios.create({ withCredentials: true });
 
 export const login = async ({ username, password }) => {
