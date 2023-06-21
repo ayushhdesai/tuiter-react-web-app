@@ -42,12 +42,12 @@ console.log("profile" , profile)
          }}/>
        </div></div>
      )}
-     <button style={{marginRight: 10, marginTop: 10}}
+     <button className="btn btn-danger mt-2" style={{marginRight: 10, marginTop: 10}}
       onClick={() => {
         dispatch(logoutThunk());
         navigate("/tuiter/login");
       }}>                   Logout</button>
-     <button style={{marginLeft: 10, marginTop: 10}} onClick={save}>Save  </button>
+     <button className="btn btn-primary mt-2" style={{marginLeft: 10, marginTop: 10}} onClick={save}>Save  </button>
     </div> );
 }
 
