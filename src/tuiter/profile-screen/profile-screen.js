@@ -1,30 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import { profileThunk, logoutThunk, updateUserThunk } from "../services/auth-thunks";
-
+import { profileThunk, logoutThunk, updateUserThunk }
+  from "../services/auth-thunks";
 function ProfileScreen() {
  const { currentUser } = useSelector((state) => state.user);
  var [ profile, setProfile ] = useState(currentUser);
  const dispatch = useDispatch();
  const navigate = useNavigate();
  const save = async () => { 
-    try {
-        const updateSuccess = await dispatch(updateUserThunk(profile));
-        if (updateSuccess) {
-            alert("Profile information Updated");
-        } else {
-            alert("An error occurred. Please try again later.");
-        }
-    } catch (error) {
-        alert("An error occurred. Please try again later.");
-    }
+    await dispatch(updateUserThunk(profile)); 
 };
-
 
 useEffect(  () => {
     dispatch(profileThunk())
-});
+
+}, [dispatch]);
 console.log("profile" , profile)
  return (
     <div>
@@ -51,14 +42,12 @@ console.log("profile" , profile)
          }}/>
        </div></div>
      )}
-     <button className="btn btn-danger rounded-pill float-start"
-                    style={{ margin: '5px 130px'}}
+     <button style={{marginRight: 10, marginTop: 10}}
       onClick={() => {
         dispatch(logoutThunk());
         navigate("/tuiter/login");
       }}>                   Logout</button>
-     <button className="btn btn-primary rounded-pill float-start"
-                    style={{ margin: '5px' }} onClick={save}>Save  </button>
+     <button style={{marginLeft: 10, marginTop: 10}} onClick={save}>Save  </button>
     </div> );
 }
 

@@ -14,19 +14,18 @@ export const profileThunk = createAsyncThunk(
     "users/profile", async () => {
     return await authService.profile();
    });
-
 export const logoutThunk = createAsyncThunk(
-    "users/logout", async () => {
-    return await authService.logout();
+"users/logout", async () => {
+return await authService.logout();
 });
-
 export const updateUserThunk = createAsyncThunk(
 "users/updateUser", async (user) => {
+    console.log("save, rhunk : ", user);
     await authService.updateUser(user);
     return user;
 });
 
-export const registerThunk = createAsyncThunk( "users/register", async (credentials) => { 
+export const register = createAsyncThunk( "users/register", async (credentials) => { 
     const user = await authService.register(credentials);
     return user;
 });

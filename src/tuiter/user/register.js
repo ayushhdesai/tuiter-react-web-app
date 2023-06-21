@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
-import { registerThunk } from "../services/auth-thunks";
+import { register } from "../services/auth-thunks";
 
 function RegisterScreen() {
  const [username, setUsername] = useState("");
  const [password, setPassword] = useState("");
+ const [firstName, setFirstName] = useState("");
+ const [lastName, setLastName] = useState("");
  const navigate = useNavigate();
  const dispatch = useDispatch();
  const handleRestration = async () => {
   try {
-    await dispatch(registerThunk({ username, password }));
+    await dispatch(register({ username, password, firstName, lastName }));
     navigate("/tuiter/profile");
   } catch (e) {
     alert(e);
@@ -28,6 +30,16 @@ function RegisterScreen() {
        <label>Password</label>
        <input className="form-control" type="password" value={password}
          onChange={(event) => setPassword(event.target.value)}/>
+     </div>
+     <div className="mt-2">
+      <label>First name</label>
+      <input className="form-control" type="text" value={firstName}
+       onChange={(event) => setFirstName(event.target.value)}/>
+     </div>
+     <div className="mt-2">
+      <label>Last name</label>
+      <input className="form-control" type="text" value={lastName}
+       onChange={(event) => setLastName(event.target.value)}/>
      </div>
      <button className="btn btn-primary mt-2"
              onClick={handleRestration}>
